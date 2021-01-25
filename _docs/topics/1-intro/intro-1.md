@@ -5,31 +5,41 @@ permalink: /docs/intro-1/
 
 ## <a name="outline"></a>Module Outline  
 
-### Object Oriented Programming
+### Game Engine Development
 
-1. Java Review/Recap
-2. Classes & Objects
-3. Inheritance
-4. Polymorphism
-5. Encapsulation
-6. Abstraction
+1. Introduction
+2. C++
+3. OpenGL
+4. Rendering
+  * 2D Rendering
+  * 3D Rendering
+5. Physics
+  * Collision Detection
+  * Rigid Body Physics
+6. Other Features
+  * Terrain Generation
+  * Particle Effects
+  
 
-### Object Oriented Analysis & Design
 
-1. Identifying Objects
-2. Designing Classes
-3. Class Relationships
-4. UML Diagrams
-5. Top Down Development
+### Not Covering
+1. AI (See AI For Games Module)
+2. Sound (I know nothing!)
 
 ## <a name="assessment"></a>Assessment
 
 Portfolio  
 * Submitted at the end of the module  
 * Consisting of  
-  * Java Programming Exercise A
-    * Code & Documentation  
-  * Java Programming Exercise B
-    * Code & Documentation  
+  * A Game Engine Component
+    * Code
+    * Runs using OpenGL, includes demonstration 
+  * Documentation covering
+    * The role of the component in a game engine/game
+    * Your design approach
+    * Interesting technical details
+    * Evaluation & Review
+  * Presentation & Demonstration to Class
+
 
 
