@@ -39,5 +39,26 @@ Portfolio
     * Evaluation & Review
   * Presentation & Demonstration to Class
 
+## Introduction
+
+In a nutshell, this module explores a number of different software component commonly found within 3d game engines. The module will also provide you with an opportunity to develop one or more game engine components.   
+
+The module aims to:
+* Improve your understanding of game engines
+* Improve your programming prowess
+
+## Learning Outcomes
+
+1. Apply appropriate concepts, principles and approaches to games engine development;
+2. Critically evaluate different approaches to game engine development using appropriate techniques
+3. Effectively communicate a systematic understanding of the core principles of Game Engine development
+
+## Recommended Reading
+
+* *Game Engine Architecture 3rd Edition*,  Gregory, Jason. CRC Press, 2018
+* *Real-Time Collision Detection*, Ericson Christer, CRC Press 2004
+* *Game Physics Engine Development* Millington, Ian. CRC Press 2010
+
+
 
 
