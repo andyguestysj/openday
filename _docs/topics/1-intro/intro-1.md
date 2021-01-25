@@ -20,8 +20,6 @@ permalink: /docs/intro-1/
   * Terrain Generation
   * Particle Effects
   
-
-
 ### Not Covering
 1. AI (See AI For Games Module)
 2. Sound (I know nothing!)
