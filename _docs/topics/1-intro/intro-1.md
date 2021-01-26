@@ -29,9 +29,9 @@ Portfolio
 * Submitted at the end of the module  
 * Consisting of  
   * A Game Engine Component
-    * Code
-    * Runs using OpenGL, includes demonstration 
-  * Documentation covering
+    * Code - not marked but must be submitted
+  * Documentation 
+    * Presented as Paper
     * The role of the component in a game engine/game
     * Your design approach
     * Interesting technical details
@@ -57,6 +57,8 @@ The module aims to:
 * *Game Engine Architecture 3rd Edition*,  Gregory, Jason. CRC Press, 2018
 * *Real-Time Collision Detection*, Ericson Christer, CRC Press 2004
 * *Game Physics Engine Development* Millington, Ian. CRC Press 2010
+* *Computational Beauty of Nature* Flake, Gary. MIT Press 1998
+* *Mathematics for 3D Game Programming and Computer Graphics* Lengyel, Eric. Charles River Media, 2003
 
 
 
