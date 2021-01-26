@@ -11,14 +11,13 @@ permalink: /docs/intro-1/
 2. C++
 3. OpenGL
 4. Rendering
-  * 2D Rendering
-  * 3D Rendering
 5. Physics
   * Collision Detection
   * Rigid Body Physics
 6. Other Features
   * Terrain Generation
-  * Particle Effects
+  * Particle Systems
+  * Flocking Algorithm
   
 ### Not Covering
 1. AI (See AI For Games Module)
