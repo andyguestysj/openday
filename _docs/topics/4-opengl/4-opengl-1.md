@@ -91,11 +91,11 @@ GLUT does not contain all the bells and whistles though (no sliders, no dialog b
 
 Most window-based programs are **event-driven** which means do nothing until an event happens, and then execute some pre-defined functions. **Events** - key press, mouse button press and release, window resize, etc.  
 
-### glutDisplayFunc(void (*func)(void))
+#### glutDisplayFunc(void (*func)(void))
 
 ![glutDisplayFunc](https://ysjged.netlify.app/assets/img/opengl/glutDisplayFunc.png)*glutDisplayFunc*  
 
-### Event Queue
+#### Event Queue
 
 ![Event Queue](https://ysjged.netlify.app/assets/img/opengl/eventqueue.png)*Event Queue*  
 
@@ -104,6 +104,6 @@ Most window-based programs are **event-driven** which means do nothing until an 
 * **glutMotionFunc()** - register the callback that will be called when a mouse is in motion while a button is pressed
 * **glutIdleFunc()** - register the callback that will be called when nothing is going on (no event)
 
-### glutMainLoop()
+#### glutMainLoop()
 
 The function **glutMainLoop()** puts the program in to an infinite loop waiting for events.  
