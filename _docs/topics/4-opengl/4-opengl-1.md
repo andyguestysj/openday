@@ -80,19 +80,22 @@ GLUT does not contain all the bells and whistles though (no sliders, no dialog b
 ### Sample Programme
 
 ![Sample Program - Display Mode](https://ysjged.netlify.app/assets/img/opengl/prog1.png)*Display Mode*  
+
 ![Sample Program - Create Window](https://ysjged.netlify.app/assets/img/opengl/prog2.png)*Create Window*  
+
 ![Sample Program - Initialisation](https://ysjged.netlify.app/assets/img/opengl/prog3.png)*Initialisation*  
+
 ![Sample Program - Register callback functions](https://ysjged.netlify.app/assets/img/opengl/prog4.png)*Register callback functions*
 
 ### Callback Functions
 
 Most window-based programs are **event-driven** which means do nothing until an event happens, and then execute some pre-defined functions. **Events** - key press, mouse button press and release, window resize, etc.  
 
-**glutDisplayFunc(void (*func)(void))**
+### glutDisplayFunc(void (*func)(void))
 
 ![glutDisplayFunc](https://ysjged.netlify.app/assets/img/opengl/glutDisplayFunc.png)*glutDisplayFunc*  
 
-**Event Queue**
+### Event Queue
 
 ![Event Queue](https://ysjged.netlify.app/assets/img/opengl/eventqueue.png)*Event Queue*  
 
