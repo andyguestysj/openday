@@ -41,11 +41,11 @@ glEnd();
 
 All geometric primitives are specified by vertices.  
 
-![GL_PRIMITIVES](https://ysjged.netlify.app/assets/img/topics/opengl/primitives.png)  
+![GL_PRIMITIVES](https://ysjged.netlify.app/assets/img/opengl/primitives.png)  
 
-![glVertex](https://ysjged.netlify.app/assets/img/topics/opengl/glvertex.png)  
+![glVertex](https://ysjged.netlify.app/assets/img/opengl/glvertex.png)  
 
-![Shape Example](https://ysjged.netlify.app/assets/img/topics/opengl/shapeexample.png)  
+![Shape Example](https://ysjged.netlify.app/assets/img/opengl/shapeexample.png)  
 
 ### Window System Independent
 
@@ -79,22 +79,28 @@ GLUT does not contain all the bells and whistles though (no sliders, no dialog b
 
 ### Sample Programme
 
-![Sample Program - Display Mode](https://ysjged.netlify.app/assets/img/topics/opengl/prog1.png)*Display Mode*  
-![Sample Program - Create Window](https://ysjged.netlify.app/assets/img/topics/opengl/prog2.png)*Create Window*  
-![Sample Program - Initialisation](https://ysjged.netlify.app/assets/img/topics/opengl/prog3.png)*Initialisation*  
-![Sample Program - Register callback functions](https://ysjged.netlify.app/assets/img/topics/opengl/prog4.png)*Register callback functions*
+![Sample Program - Display Mode](https://ysjged.netlify.app/assets/img/opengl/prog1.png)*Display Mode*  
+![Sample Program - Create Window](https://ysjged.netlify.app/assets/img/opengl/prog2.png)*Create Window*  
+![Sample Program - Initialisation](https://ysjged.netlify.app/assets/img/opengl/prog3.png)*Initialisation*  
+![Sample Program - Register callback functions](https://ysjged.netlify.app/assets/img/opengl/prog4.png)*Register callback functions*
 
-#### Callback Functions
+### Callback Functions
 
 Most window-based programs are **event-driven** which means do nothing until an event happens, and then execute some pre-defined functions. **Events** - key press, mouse button press and release, window resize, etc.  
 
 **glutDisplayFunc(void (*func)(void))**
 
-![glutDisplayFunc](https://ysjged.netlify.app/assets/img/topics/opengl/glutDisplayFunc.png)*glutDisplayFunc*  
+![glutDisplayFunc](https://ysjged.netlify.app/assets/img/opengl/glutDisplayFunc.png)*glutDisplayFunc*  
 
 **Event Queue**
 
-![Event Queue](https://ysjged.netlify.app/assets/img/topics/opengl/eventqueue.png)*Event Queue*  
+![Event Queue](https://ysjged.netlify.app/assets/img/opengl/eventqueue.png)*Event Queue*  
 
+* **glutKeyboardFunc()** - register the callback that will be called when a key is pressed
+* **glutMotionFunc()** - register the callback that will be called when a mouse button is pressed
+* **glutMotionFunc()** - register the callback that will be called when a mouse is in motion while a button is pressed
+* **glutIdleFunc()** - register the callback that will be called when nothing is going on (no event)
 
+### glutMainLoop()
 
+The function **glutMainLoop()** puts the program in to an infinite loop waiting for events.  
