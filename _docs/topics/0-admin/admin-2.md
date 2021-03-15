@@ -33,20 +33,20 @@ You will be using OpenGL as the basis for implementing and demonstrating your ga
 
 I will be using Visual Studio Code for any code for this module.  
 
-## repl.it
+## replit.com
 
 Given the current circumstances requiring social distancing we have very limited space in the labs and we cannot do side by side programming. Students cannot sit together to code and lecturers cannot sit with students to help them. The installed version of MS Teams does allow screen sharing which allows us to work remotely but that requires everyone to have access to the required software. 
 
-repl.it is not ideal for this module, it is slow and clunky for the type of coding we will be dealing with. It is however possible to use repl.it, it is an option, albeit not a good one. There are starter repls available with the core of C and C++ code using OpenGL. They run slowly.
+replit.com is not ideal for this module, it is slow and clunky for the type of coding we will be dealing with. It is however possible to use replit.com, it is an option, albeit not a good one. There are starter repls available with the core of C and C++ code using OpenGL. They run slowly.
 
-repl.it is an online browser based compiler that supports a wide range of programming languages. Code is written directly in a browser, compiled and executed on repl.it's server and the output is sent back to the browser. This ensures that all students have access to the same software without installation issues. Additionally because the code is compiled and executed remotely on repl.it's servers it ensures that any computer with a browser and an internet connection can be used.  
+replit.com is an online browser based compiler that supports a wide range of programming languages. Code is written directly in a browser, compiled and executed on replit.com's server and the output is sent back to the browser. This ensures that all students have access to the same software without installation issues. Additionally because the code is compiled and executed remotely on replit.com's servers it ensures that any computer with a browser and an internet connection can be used.  
 
 You **can** come in to the labs, during your timetabled sessions, if you wish or do not have access to a machine at home. Be aware that I will not be in the labs, I will be running the session remotely. You will also need to bring headphones to use, ideally with built-in microphone if you want to speak to me or other students.  
 
-You can sign up for a repl.it account for free at [https://repl.it/](https://repl.it/). I recommend you do so using your York St John email account address.  
+You can sign up for a replit.com account for free at [https://replit.com/](https://replit.com/). I recommend you do so using your York St John email account address.  
 
-The repl.it page on this site (under the Reference section) contains instructions and tips for using repl.it.  
+The replit.com page on this site (under the Reference section) contains instructions and tips for using replit.com.  
 
 ## Git
 
-We will be using Git again to store code repositories and submit code. repl.it has very good integration with GitHub and can pull and push code from our GitLab (with a little bit of setup). Information on how to do this is on the repl.it page.
+We will be using Git again to store code repositories and submit code. replit.com has very good integration with GitHub and can pull and push code from our GitLab (with a little bit of setup). Information on how to do this is on the replit.com page.

@@ -4,7 +4,7 @@ permalink: /docs/4-opengl-9/
 ---
 
 
-OpenGL template in repl.it. [https://repl.it/@quentin_dalcin/OpenGL](https://repl.it/@quentin_dalcin/OpenGL)   
+OpenGL template in replit.com. [https://replit.com/@quentin_dalcin/OpenGL](https://replit.com/@quentin_dalcin/OpenGL)   
 
 * [Setting up OpenGL & GLUT for Windows/Visual Studio](https://www.absingh.com/opengl/)  
 * [Setting up OpenGL & GLUT for Windows/Visual Studio](https://www.c-sharpcorner.com/UploadFile/f5a10c/getting-started-with-opengl-in-visual-cpp/)
