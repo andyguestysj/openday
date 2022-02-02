@@ -13,7 +13,7 @@ If there are any contradictions between Moodle and other sources the Moodle info
 
 ## Website
 
-The content for the module will be provided through the Programming 02 webpage [https://ysjprog02.netlify.app/](https://ysjprog02.netlify.app/). Moodle isn't suitable for presenting the information, videos and tutorials required. There is a link to the webpage on Moodle.
+The content for the module will be provided through the Programming 02 webpage [https://ysjged.netlify.app/](https://ysjged.netlify.app/). Moodle isn't suitable for presenting the information, videos and tutorials required. There is a link to the webpage on Moodle.
 
 ## eMail
 
@@ -32,20 +32,6 @@ You will be using OpenGL as the basis for implementing and demonstrating your ga
 ## Visual Studio Code
 
 I will be using Visual Studio Code for any code for this module.  
-
-## replit.com
-
-Given the current circumstances requiring social distancing we have very limited space in the labs and we cannot do side by side programming. Students cannot sit together to code and lecturers cannot sit with students to help them. The installed version of MS Teams does allow screen sharing which allows us to work remotely but that requires everyone to have access to the required software. 
-
-replit.com is not ideal for this module, it is slow and clunky for the type of coding we will be dealing with. It is however possible to use replit.com, it is an option, albeit not a good one. There are starter repls available with the core of C and C++ code using OpenGL. They run slowly.
-
-replit.com is an online browser based compiler that supports a wide range of programming languages. Code is written directly in a browser, compiled and executed on replit.com's server and the output is sent back to the browser. This ensures that all students have access to the same software without installation issues. Additionally because the code is compiled and executed remotely on replit.com's servers it ensures that any computer with a browser and an internet connection can be used.  
-
-You **can** come in to the labs, during your timetabled sessions, if you wish or do not have access to a machine at home. Be aware that I will not be in the labs, I will be running the session remotely. You will also need to bring headphones to use, ideally with built-in microphone if you want to speak to me or other students.  
-
-You can sign up for a replit.com account for free at [https://replit.com/](https://replit.com/). I recommend you do so using your York St John email account address.  
-
-The replit.com page on this site (under the Reference section) contains instructions and tips for using replit.com.  
 
 ## Git
 
