@@ -1,7 +1,13 @@
 ---
-title: Introduction
+title: Module Overview
 permalink: /docs/intro-2/
 ---
+
+## Module Scope
+
+Game Engines are incredibly complex, with many distinct yet interacting parts. This module will not tell you how to build a game engine from scratch. To have a module that covered building a game engine we would first need to have modules covering the mathematics involved, simulating physics, rendering, sound engines, asset management, AI and many, many other topics. We are not in a position to do this.  
+
+What we will do instead is discuss various components commonly found in game engines - what they do, how they work, what they are used for, etc.
 
 ## Definition of a Game Engine
 

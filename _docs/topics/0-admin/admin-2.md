@@ -24,15 +24,3 @@ The best way to contact me is via [email](mailto:a.guest@yorksj.ac.uk). You can 
 ## Microsoft Teams
 
 MS Teams will be used for all face to face contact. Lab/tutorial session will be run as live MS Teams sessions. Please install MS Teams on your machines if you can, the web version is limited and a bit flaky.  
-
-## OpenGL
-
-You will be using OpenGL as the basis for implementing and demonstrating your game engine component.  
-
-## Visual Studio Code
-
-I will be using Visual Studio Code for any code for this module.  
-
-## Git
-
-We will be using Git again to store code repositories and submit code. replit.com has very good integration with GitHub and can pull and push code from our GitLab (with a little bit of setup). Information on how to do this is on the replit.com page.

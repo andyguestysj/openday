@@ -1,4 +1,4 @@
-- title: Introduction
+- title: Administrivia
   docs:
   - admin-1
   - admin-2
@@ -14,11 +14,11 @@
   - gitlab-terminal
   - gitlens
 - title: Lectures
-- title: 1. Introduction
+- title: 1. Game Engines Overview
   docs:
   - intro-1  
   - intro-2
-  - intro-3
+  #- intro-3
 - title: 2. Terrain Generation
   docs:
 #  - 2-terrain-1

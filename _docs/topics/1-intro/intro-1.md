@@ -3,48 +3,29 @@ title: Overview
 permalink: /docs/intro-1/
 ---
 
-## <a name="outline"></a>Module Outline  
+## Module Outline  
 
 ### Game Engine Development
 
-1. Introduction
-2. C++
-3. OpenGL
-4. Rendering
-5. Physics
-  * Collision Detection
-  * Rigid Body Physics
-6. Other Features
-  * Terrain Generation
-  * Particle Systems
-  * Flocking Algorithm
+1. Module Overview
+2. Game Engines Overview
+3. 
   
-### Not Covering
-1. AI (See AI For Games Module)
-2. Sound (I know nothing!)
 
-## <a name="assessment"></a>Assessment
+## Assessment
 
-Portfolio  
-* Submitted at the end of the module  
-* Consisting of  
-  * A Game Engine Component
-    * Code - not marked but must be submitted
-  * Documentation 
-    * Presented as Paper
-    * The role of the component in a game engine/game
-    * Your design approach
-    * Interesting technical details
-    * Evaluation & Review
-  * Presentation & Demonstration to Class
+1. A One Page game description/promo/elevator pitch for your game [10%]
+2. A Game developed using a game engine [40%]
+3. An essay describing the use of the game engine for your game [50%]
+
 
 ## Introduction
 
-In a nutshell, this module explores a number of different software component commonly found within 3d game engines. The module will also provide you with an opportunity to develop one or more game engine components.   
+In a nutshell, this module explores a number of different software component commonly found within 3d game engines. The module will also provide you with an opportunity to develop a game using a game engine.   
 
 The module aims to:
 * Improve your understanding of game engines
-* Improve your programming prowess
+* Improve your game development skills
 
 ## Learning Outcomes
 
