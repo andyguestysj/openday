@@ -2,34 +2,32 @@
   docs:
   - admin-1
   - admin-2
-- title: Reference
-  docs:
-  - vsc
-  - vsc-cloning
-  - replit
-  - git
-  - gitlab-setup
-  - gitlab-save
-  - gitlab-vsc
-  - gitlab-terminal
-  - gitlens
 - title: Lectures
 - title: 1. Game Engines Overview
   docs:
   - intro-1  
   - intro-2
-  #- intro-3
-- title: 2. Terrain Generation
+- title: 2. Rendering Engine
   docs:
-#  - 2-terrain-1
-- title: 3. 2D Physics
+- title: 3. Scene Graph
   docs:
-#  - 3-2dphysics-1
-- title: 4. OpenGL
+- title: 4. Collision Detection
+  docs:
+- title: 5. Scripting
+  docs:
+- title: 6. Animation
+  docs:
+- title: 7. Sound
+  docs:
+- title: 8. Networking
+  docs:
+- title: 9. Streaming
+  docs:
+- title: 10. Memory Management/Threading
+  docs:
+- title: Assessment
+  docs:
+  - brief
+#- title: Mid-Module Evaluation
 #  docs:
-#  - 4-opengl-1
-#  - 4-opengl-2
-#  - 4-opengl-9
-- title: Mid-Module Evaluation
-  docs:
 #  - midmod-1
