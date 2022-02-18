@@ -1,14 +1,14 @@
 # Site settings
-title: Game Engine Development
+title: YSJ Open Day
 email: a.guest@yorksj.ac.uk
 description: >
-  Game Engine Development Webpage
+  YSJ Open Day Webpage
 lang: en-US
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: https://ysjged.netlify.app # the base hostname & protocol for your site
-git_address: https://github.com/andyguestysj/ged
-git_edit_address: https://github.com/andyguestysj/ged
+url: https://ysjopenday.netlify.app # the base hostname & protocol for your site
+git_address: https://github.com/andyguestysj/openday
+git_edit_address: https://github.com/andyguestysj/openday
 
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
