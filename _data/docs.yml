@@ -9,6 +9,7 @@
   - intro-2
   - intro-3
 - title: 2. Rendering Engine
+  - render-1
   docs:
 - title: 3. Scene Graph
   docs:

@@ -1,37 +1,164 @@
 ---
-title: GE Simplified
+title: Game Engines
 permalink: /docs/intro-3/
 ---
 
-From [https://www.studytonight.com/3d-game-engineering-with-unity/game-engine](https://www.studytonight.com/3d-game-engineering-with-unity/game-engine)  
+## Definition of a Game Engine
 
-## Components of Game Engine
+A game engine is “a piece of software designed for the creation and development of video games”.  It offers a number of components and/or tools which can be (re)used to economise game development.  
 
-A Game Engine is created to develop games, just like any other IDE for any particular language programming. All the components in the game engine are built and integrated to support the motive of game development.  
+Core functionality typically provided by a game engine includes:
 
-### Input
+* rendering engine (2D/ 3D)
+* scene graph
+* collision detection (and response)
+* physics engine
+* scripting 
+* animation
+* artificial intelligence
+* sound
+* networking
+* streaming
+* memory management 
+* threading
 
-A game is nothing if it cannot be played, the game engine provides with support of array of input devices like mouse, gamepad, touch etc while also providing support for devices like gamepad, joysticks etc. There are many different ways of handling an input, two most commonly used are through: events and polling. Input events are captured by the computer (like right click of mouse, or pressing arrow up key etc) and your custom code is triggered based on what input was received. Polling is used to get the position values, for example on which coordinates(x,y) does the mouse pointer is, or tilt angle of Game stick or the Smartphone using which you are playing the game.  
+Game engines may also provide development tools and/or an integrated development environment to aid developers.  
 
-### Graphics
+Some game engines only provide real-time 3D rendering capabilities (providing attachment hooks for the other types of needed game functionality). Such engines are generally referred to as a graphics engine or rendering engine.  
 
-Graphics in a game decides its fate. 3D graphics are designed using 3D assets, which are developed and designed in external 3D rendering programs like Maya, Blender etc and are then imported into the game engine. Hence a good game engine must support multiple import formats.  
+## Platform and Hardware Abstraction
 
-Game engine provides a lot of features like lighting effects, shadow, bump maps, blending animation etc to make the imported asset look real.  
+Many game engines provide platform abstraction (i.e. they can be run multiple platforms – including PCs, consoles, handhelds, mobile devices, etc.).  
 
-### Physics
+Typically the rendering system in a game engine is built on top of a defined graphics API (e.g. Direct3D or OpenGL) providing access to the GPU.   
 
-There is a sub-component of the game engine, which is known as Physics Engine. Physics engines are software which allows performing fairly accurate simulation of most of the real-life physical systems like the movement of rigid body (we will perform that practically in later chapter using Unity 3D), soft body mass and velocity alteration and fluid dynamics, bounciness etc. These are complex engines integrated in the latest game engines, are mainly used in video games (usually as a middleware), where the real-time and real-life simulation must be portrayed. Gravity, collision detection, rotation & revolution, speed of objects and other such applications are handled by the physics engine within the game.  
+Other libraries such as DirectX, OpenAL, etc. may also be supported to provide hardware-independent access to input devices, sound cards, network cards, physics accelerators, etc.  
 
-### Artificial Intelligence
+## Component-based Architectures
 
-Now-a-days, Artificial Intelligence is playing a significant role within the game development. Knowing the kind of weapons the player will be using based on the situation or the behavior of the player gets recorded and actions are performed accordingly, can be done using specialized software embedded into the games. The implementation of AI in games is usually done using readymade scripts that are designed and written by software engineers who are specialized in AI. For example: How our character reacts on hitting a wall, or seeing an animal etc can be done easily by building a trer of behaviour nodes, rather than writing complex code.  
+Extensibility within a game engine is important given the diverse and progressive nature of game development. As such, many game engines adopt a component-based architecture, permitting engine components to be replaced or extended (either by the developer or using specialised middleware components).  
 
-### Sound
+Common middleware components include: Havok (physics), FMOD (sound), Scaleform GFx (UI), SpeedTree (trees/vegetation), Bink (video), Granny 3D (content/animation), etc.  
 
-Audio and Rendering Engines are a sub-part of the Game engine which are used to control the sound effects and generate 3D animated graphics in your 2D screen. They provide a software abstraction of GPU using the multi-rendering API's like Direct3D or OpenGL for video rendering and API's such as Open-AL, SDL audio, X-Audio 2, Web Audio for audio.  
+## Engine Architecture
 
-### Networking
+There is no standard architecture for game engines. The image below is a good generic model.  
 
-Since a decade now, games support online multiplayer and social gaming, which connects your gaming adventures with your friends. Most of the gaming engines, provide complete support and scripts for such requirements, so you do not have to worry about TCP/UDP traffic, social API integrations etc.  
+<img src="{{ "/assets/img/intro/architecture.png" | relative_url }}" alt="generic game engine model" class="img-responsive">
+
+### Hardware
+
+The target hardware layer on which the game will run. A game engine may be capable of running on top of a number of hardware layers.
+
+### SDKs/Drivers/OS
+
+Typically some means of communicating with the underlying hardware is needed. This can be accomplished using either device drivers or through APIs exposed by the OS.  
+
+In some cases, e.g. PCs, the OS strongly controls execution of the game engine (which is one executing process amongst many).  
+
+Most game engines use 3rd party SDKs to provide access to: 
+* Ready made data-structures and algorithms (e.g. STL or Boost in C++)
+* Graphics hardware (e.g. DirectX or OpenGL)
+* Collision detection and Physics (e.g. Havok, PhysX or ODE)
+* etc.
+
+### Platform Independence
+
+Game engines which can run across multiple platforms often provide an abstraction layer hiding platform specific differences from higher-level layers.  
+
+The platform independence layer assures that standard data types, libraries, fundamental APIs, etc. offer consistent behaviour across the different supported platforms.  
+
+<img src="{{ "/assets/img/intro/platindep.png" | relative_url }}" alt="platform independence components" class="img-responsive">
+
+### Core Systems
+
+In order to function game engines typically depend upon underlying utility and support classes. Depending upon the game engine, this might include:  
+
+<img src="{{ "/assets/img/intro/core.png" | relative_url }}" alt="platform independence components" class="img-responsive">
+
+### Game Assets
+
+The resource manager provides a unified means of accessing the different types of game asset and other engine input data, including but not necessarily limited to model meshes, textures, fonts, skeletal animation data, game/world maps, etc.  
+
+### Rendering Engine
+
+The rendering engine within a game engine tends to be a large and complex component which is often decomposed into separate layers
+
+#### Renderer
+
+This component encapsulates all the raw rendering facilities of the engine, providing a means of rendering a collection of geometric primitives as quickly as possible.  
+
+Supported geometric primitives may include triangle meshes, line lists, point lists, particles, etc.  
+
+This component typically accesses the graphics device interface (possibly through a defined platform independence layer) and acts to configure the hardware state and game shaders using some defined *material system* and *dynamic lighting system*.
+
+#### Scene Graph/Culling
+
+It is the job of the scene graph to limit the number of geometric primitives sent to the renderer based on some form of visibility determination.   
+
+Typically some form of world spatial decomposition (bsp tree, bounding volume hierarchy, etc.) is employed to build a set of potentially visible objects.  
+
+#### Visual Effects
+
+The rendering engine might provide support for the following types of visual effect:  
+* Particle effects
+* Decal system
+* Dynamic shadows
+* Light/environmental mapping
+* Full-screen post render effects (e.g. HDR, FSAA, colour correction, etc.).
+
+#### Front End
+
+A front end component provides a means of rendering 2D graphics (possibly overlaid on top of a 3D scene), providing:  
+* Game front end and menus
+* In game Head-up-display (HUD)
+* In game graphical user interface (e.g. for inventory screens, etc.)
+* Debugging and other tools (e.g. console)
+
+### Collisions & Physics
+
+Whilst collision detection and a real-time dynamics simulator can be separate entities, they are often found together given the interdependence of physics on collision detection. Given the complexity of both areas, most engines rely upon a 3rd party SDK (e.g. Havok, etc.).  
+
+A collision detection system is often of use within a wide range of non-physics related component.  
+
+### Animation
+
+Most current game engines support skeletal animation, permitting a mesh to be posed using a system of bones. Poses are typically interpolated or combined to produce a palette of matrices used to render the mesh parts (a process known as skinning).  
+
+### Human Interface Devices
+
+Games often support a number of different forms of player interface device, including:  
+* Keyboard and Mouse
+* Gamepad
+* Specialised Controllers (e.g. Wii Fit Board, dance pads, steering wheels).
+
+It is often the role of this component to abstract the mapping of physical controls and logical game functions. The component may also embed support for detecting multiple simultaneous button presses and/or input sequences, etc.  
+
+### Audio 
+The sophistication of audio engines between different game engines differs considerably. More advanced audio engines offer wide support for different input sound formats, including streaming, and output speaker arrangements.  
+
+Additionally, different forms of playback support, including audio effects, may also be supported.  
+
+### Networking 
+
+Game engines typically provide support permitting multiple computers/ consoles to be linked together in some form of mutli-player game. This is a different environment to massively multiplayer online games (MMOGs) where thousands of players are typically managed using a server farm.  
+
+### Gameplay Foundations
+
+Gameplay refers to the actions which take place within the game. Gameplay is either implemented using the same language as that used to create the underlying game engine, or through a higher-level scripting language, or some combination of both. 
+The gameplay foundations layer offers utilities of use to gameplay formation and a means of readily accessing some of the lower-level engine components.
+
+<img src="{{ "/assets/img/intro/gameplay.png" | relative_url }}" alt="gameplay foundations" class="img-responsive">
+
+#### Game World
+The gameplay foundations layer may define the game world structure in terms of both static (e.g. background geometry) and dynamic objects (e.g. NPCs, rigid bodies subject to physics).
+#### Event / Messaging System
+In order to permit game objects to communicate and interact an event based messaging system is often employed.
+#### Scripting System
+A scripting system may be employed in order to provide more rapid, accessible and convenient development of gameplay rules and content.
+Typically using an interpreted scripting language avoids the need to rebuild the code base given a gameplay change.
+#### High-Level Game Flow System
+High-level control mechanisms, such as finite-state machines, etc. may be embedded within the gameplay foundations layer and made avaiable to the game specific sub-systems. 
+
+
 
