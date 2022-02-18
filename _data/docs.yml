@@ -1,3 +1,6 @@
+- title: Decision Day
+  docs:
+  - dd-1
 - title: Administrivia
   docs:
   - admin-1
@@ -9,8 +12,8 @@
   - intro-2
   - intro-3
 - title: 2. Rendering Engine
-  - render-1
   docs:
+  - render-1  
 - title: 3. Scene Graph
   docs:
 - title: 4. Collision Detection
